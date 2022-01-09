@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Pull down to refresh with PulltoRefresh.js</title>
+
+       
+
+        
+
+     
+
+    </head>
+
+    <body >
+
+        
+
+       <h2>Make user-friendly select element with Chosen - jQuery</h2>
+
+       <p>The Chosen jQuery plugin makes your HTML select element more user-friendly. It is available in both jQuery and Prototype flavor.<p>
+
+       <p>It can handle both single and multi-select options. Add a search box to filter the list of options.</p>
+
+       <p>There are various options available that allow us to customize the select element behavior.</p>
+
+    
+
+        <!-- Script -->
+
+        <script src="//unpkg.com/hammer-touchemulator@0.0.2/touch-emulator.js"></script>
+
+        <script>TouchEmulator()</script>
+
+        <script src="pulltorefresh.js/dist/pulltorefresh.js" type="text/javascript"></script>
+
+        <script type='text/javascript'>
+
+            
+
+        PullToRefresh.init({
+
+            mainElement: 'body',
+
+            onRefresh: function(){ window.location.reload(); }
+
+        });
+
+        </script>
+
+    </body>
+
+</html>
